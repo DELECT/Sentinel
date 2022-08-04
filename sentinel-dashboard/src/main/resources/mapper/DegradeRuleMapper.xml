@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.alibaba.csp.sentinel.dashboard.mapper.DegradeRuleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.alibaba.csp.sentinel.dashboard.datasource.entity.mysql.DegradeRule">
+        <id column="id" property="id" />
+        <result column="app" property="app" />
+        <result column="ip" property="ip" />
+        <result column="port" property="port" />
+        <result column="resource" property="resource" />
+        <result column="limitApp" property="limitApp" />
+        <result column="count" property="count" />
+        <result column="timeWindow" property="timeWindow" />
+        <result column="grade" property="grade" />
+        <result column="minRequestAmount" property="minRequestAmount" />
+        <result column="slowRatioThreshold" property="slowRatioThreshold" />
+        <result column="statIntervalMs" property="statIntervalMs" />
+        <result column="gmtCreate" property="gmtCreate" />
+        <result column="gmtModified" property="gmtModified" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, app, ip, port, resource, limitApp, count, timeWindow, grade, minRequestAmount, slowRatioThreshold, statIntervalMs, gmtCreate, gmtModified
+    </sql>
+
+</mapper>
